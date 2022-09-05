@@ -1,0 +1,792 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0B757165F06AE7A00C22F993974E7DAC /* HsSonicWavesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD36109C4F97894A7A5F698C5A148D45 /* HsSonicWavesView.swift */; };
+		179F78C99F3949D51A95DE58761F23D7 /* GavinAudiorecorder-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 826F9F7ECD761417D19A0637E1102E8F /* GavinAudiorecorder-dummy.m */; };
+		2D56EAAB15B4A3689619911D0D49A9F7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		5BF99354574A647FA5A922E0D79BEFF8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		83653716E6EF55C0EFB9E8AC0D93F5AD /* HsAudioPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DA97837C009F8AC57A3FB793714EC1E /* HsAudioPlayer.swift */; };
+		94B769CC7DCA9A20850E2ED72CFCAAAA /* Pods-GavinAudiorecorder_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F04AF36FE170F4C75353B3555C37AEBE /* Pods-GavinAudiorecorder_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A2BBD322C2EC30808B420F36CB315EE7 /* Pods-GavinAudiorecorder_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D999EC47F6C9171982367D8C42DC1E4 /* Pods-GavinAudiorecorder_Example-dummy.m */; };
+		A3934BBE1C7B5DC405297F58EAB02229 /* HsAudioRecorder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 648F99E4255941A8867DBD2514FC3202 /* HsAudioRecorder.swift */; };
+		B2645A425F7831BC8B65A16B6C72C58C /* Pods-GavinAudiorecorder_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C5D1F028259B736C7663529CC34772A3 /* Pods-GavinAudiorecorder_Tests-dummy.m */; };
+		CA0AD8339F2AE552279E1E7257E0C54A /* HsAudioRecordHud.swift in Sources */ = {isa = PBXBuildFile; fileRef = B00B5DE25BB12AF85E062FE2D682EA92 /* HsAudioRecordHud.swift */; };
+		D6416F8C66BCFA4965606572E9EBD207 /* Pods-GavinAudiorecorder_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 39970C954CEF39F962EA4A7564A00EC3 /* Pods-GavinAudiorecorder_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EF26656CCA6D762C85660E17A726C54F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		F964E5F870CDBBA55BDF19E7719A9069 /* HsWavesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A835966BDB7535E939DBB8E7E33D805 /* HsWavesView.swift */; };
+		FD7EBFC16875A816C70495EA30BE7CA8 /* GavinAudiorecorder-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 22DAFE71AD4F2EEF7ED7CBEDEA5AB914 /* GavinAudiorecorder-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E864698486266D7AC326F1BBF491F878 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 83237CA51E7AC76281778464217D46CC;
+			remoteInfo = "Pods-GavinAudiorecorder_Example";
+		};
+		EF209C4ACA5CAC424C460B72360E39D0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5FD9B973A0DD5940F748D3B687629BAF;
+			remoteInfo = GavinAudiorecorder;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0738C47008D5A3A4A875EA326388D499 /* Pods-GavinAudiorecorder_Tests */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-GavinAudiorecorder_Tests"; path = Pods_GavinAudiorecorder_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0C5D4F3458252D8CCEEB4C080735B6D0 /* Pods-GavinAudiorecorder_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-GavinAudiorecorder_Tests-Info.plist"; sourceTree = "<group>"; };
+		0DB3AACD004994A3BBD58AA8A9B545C7 /* GavinAudiorecorder.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = GavinAudiorecorder.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		1D999EC47F6C9171982367D8C42DC1E4 /* Pods-GavinAudiorecorder_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-GavinAudiorecorder_Example-dummy.m"; sourceTree = "<group>"; };
+		1DA97837C009F8AC57A3FB793714EC1E /* HsAudioPlayer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HsAudioPlayer.swift; path = GavinAudiorecorder/Classes/HsAudioPlayer.swift; sourceTree = "<group>"; };
+		22DAFE71AD4F2EEF7ED7CBEDEA5AB914 /* GavinAudiorecorder-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "GavinAudiorecorder-umbrella.h"; sourceTree = "<group>"; };
+		24E5BBE68010A6BE0B9073A4BB6FE6A0 /* Pods-GavinAudiorecorder_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-GavinAudiorecorder_Example-frameworks.sh"; sourceTree = "<group>"; };
+		2E94B7C748F45662E902814FA911638E /* Pods-GavinAudiorecorder_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-GavinAudiorecorder_Example-Info.plist"; sourceTree = "<group>"; };
+		36BC3307CF56AC6CD5561FD9153B42A5 /* Pods-GavinAudiorecorder_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-GavinAudiorecorder_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		39970C954CEF39F962EA4A7564A00EC3 /* Pods-GavinAudiorecorder_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-GavinAudiorecorder_Tests-umbrella.h"; sourceTree = "<group>"; };
+		3A8E9A2D52E17F58FFD9D3FFB4090B86 /* Pods-GavinAudiorecorder_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-GavinAudiorecorder_Example.modulemap"; sourceTree = "<group>"; };
+		3D3A3E3CEF084EA6693A3F11E93DDFA1 /* GavinAudiorecorder */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = GavinAudiorecorder; path = GavinAudiorecorder.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		458C69640F217CA18AF407A4D46A4A09 /* GavinAudiorecorder-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "GavinAudiorecorder-prefix.pch"; sourceTree = "<group>"; };
+		554E82073A0B2270A8F27ACE526C4A96 /* Pods-GavinAudiorecorder_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-GavinAudiorecorder_Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		61AE31D01EA468174FEAE2101CBCC408 /* Pods-GavinAudiorecorder_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-GavinAudiorecorder_Example.release.xcconfig"; sourceTree = "<group>"; };
+		648F99E4255941A8867DBD2514FC3202 /* HsAudioRecorder.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HsAudioRecorder.swift; path = GavinAudiorecorder/Classes/HsAudioRecorder.swift; sourceTree = "<group>"; };
+		64B67E0858BBA4F17032DE707050BF28 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		69FA7A90094CAA95932080FF5B4D19FD /* Pods-GavinAudiorecorder_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-GavinAudiorecorder_Tests.modulemap"; sourceTree = "<group>"; };
+		73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		7A835966BDB7535E939DBB8E7E33D805 /* HsWavesView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HsWavesView.swift; path = GavinAudiorecorder/Classes/HsWavesView.swift; sourceTree = "<group>"; };
+		7BD56132856B3CC4062ADE0EB7592C96 /* Pods-GavinAudiorecorder_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-GavinAudiorecorder_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		826F9F7ECD761417D19A0637E1102E8F /* GavinAudiorecorder-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "GavinAudiorecorder-dummy.m"; sourceTree = "<group>"; };
+		910A50ED83CA335A26301D24AE759AB5 /* Pods-GavinAudiorecorder_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-GavinAudiorecorder_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		9551FB5F1C30D2FE1329CA698A784DB1 /* GavinAudiorecorder.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = GavinAudiorecorder.modulemap; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9E6A464A66D6D661E89AB857DAD98CBB /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		A0A9D47853BA042A1F3DE6D0B3CBBBEB /* Pods-GavinAudiorecorder_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-GavinAudiorecorder_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		B00B5DE25BB12AF85E062FE2D682EA92 /* HsAudioRecordHud.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HsAudioRecordHud.swift; path = GavinAudiorecorder/Classes/HsAudioRecordHud.swift; sourceTree = "<group>"; };
+		BED088B1286C4E43C4D6D2F2DDB981B1 /* GavinAudiorecorder.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = GavinAudiorecorder.release.xcconfig; sourceTree = "<group>"; };
+		BEE6B8CD57BD58E7A0908E83B88869A0 /* Pods-GavinAudiorecorder_Example */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-GavinAudiorecorder_Example"; path = Pods_GavinAudiorecorder_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C5D1F028259B736C7663529CC34772A3 /* Pods-GavinAudiorecorder_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-GavinAudiorecorder_Tests-dummy.m"; sourceTree = "<group>"; };
+		C5FFB39E11656CADE68B825FD142CE57 /* Pods-GavinAudiorecorder_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-GavinAudiorecorder_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		C90ADF50D6C749AFF3BE5031866F3A6E /* GavinAudiorecorder.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = GavinAudiorecorder.debug.xcconfig; sourceTree = "<group>"; };
+		CD36109C4F97894A7A5F698C5A148D45 /* HsSonicWavesView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HsSonicWavesView.swift; path = GavinAudiorecorder/Classes/HsSonicWavesView.swift; sourceTree = "<group>"; };
+		D3B3DFF1B052F09DF6F49424B508CA00 /* Pods-GavinAudiorecorder_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-GavinAudiorecorder_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		E24C6D88ABF7AE301A43F04A7B0F22B2 /* GavinAudiorecorder-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "GavinAudiorecorder-Info.plist"; sourceTree = "<group>"; };
+		F04AF36FE170F4C75353B3555C37AEBE /* Pods-GavinAudiorecorder_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-GavinAudiorecorder_Example-umbrella.h"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		88FCC3CFFBD0D8C6D70FD0D91D320263 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2D56EAAB15B4A3689619911D0D49A9F7 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9AF516F2F9B93AA458465DD274F716C7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EF26656CCA6D762C85660E17A726C54F /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CF85C5EA2F4549B31BDB24B0ED9ADDDA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5BF99354574A647FA5A922E0D79BEFF8 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0225226F9B4604F9A7675D5CF302387A /* GavinAudiorecorder */ = {
+			isa = PBXGroup;
+			children = (
+				1DA97837C009F8AC57A3FB793714EC1E /* HsAudioPlayer.swift */,
+				648F99E4255941A8867DBD2514FC3202 /* HsAudioRecorder.swift */,
+				B00B5DE25BB12AF85E062FE2D682EA92 /* HsAudioRecordHud.swift */,
+				CD36109C4F97894A7A5F698C5A148D45 /* HsSonicWavesView.swift */,
+				7A835966BDB7535E939DBB8E7E33D805 /* HsWavesView.swift */,
+				CEEE32FE0B34C9062F003AC8ED4DFA6D /* Pod */,
+				8783612E55397BF30EF9FEE2EF7834D3 /* Support Files */,
+			);
+			name = GavinAudiorecorder;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		578452D2E740E91742655AC8F1636D1F /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		58F54268F1D6686ABCFA9CC70220BDFD /* Pods-GavinAudiorecorder_Tests */ = {
+			isa = PBXGroup;
+			children = (
+				69FA7A90094CAA95932080FF5B4D19FD /* Pods-GavinAudiorecorder_Tests.modulemap */,
+				C5FFB39E11656CADE68B825FD142CE57 /* Pods-GavinAudiorecorder_Tests-acknowledgements.markdown */,
+				7BD56132856B3CC4062ADE0EB7592C96 /* Pods-GavinAudiorecorder_Tests-acknowledgements.plist */,
+				C5D1F028259B736C7663529CC34772A3 /* Pods-GavinAudiorecorder_Tests-dummy.m */,
+				0C5D4F3458252D8CCEEB4C080735B6D0 /* Pods-GavinAudiorecorder_Tests-Info.plist */,
+				39970C954CEF39F962EA4A7564A00EC3 /* Pods-GavinAudiorecorder_Tests-umbrella.h */,
+				36BC3307CF56AC6CD5561FD9153B42A5 /* Pods-GavinAudiorecorder_Tests.debug.xcconfig */,
+				A0A9D47853BA042A1F3DE6D0B3CBBBEB /* Pods-GavinAudiorecorder_Tests.release.xcconfig */,
+			);
+			name = "Pods-GavinAudiorecorder_Tests";
+			path = "Target Support Files/Pods-GavinAudiorecorder_Tests";
+			sourceTree = "<group>";
+		};
+		7A578A37866B3A6FD2C7597E601E01A7 /* Pods-GavinAudiorecorder_Example */ = {
+			isa = PBXGroup;
+			children = (
+				3A8E9A2D52E17F58FFD9D3FFB4090B86 /* Pods-GavinAudiorecorder_Example.modulemap */,
+				910A50ED83CA335A26301D24AE759AB5 /* Pods-GavinAudiorecorder_Example-acknowledgements.markdown */,
+				554E82073A0B2270A8F27ACE526C4A96 /* Pods-GavinAudiorecorder_Example-acknowledgements.plist */,
+				1D999EC47F6C9171982367D8C42DC1E4 /* Pods-GavinAudiorecorder_Example-dummy.m */,
+				24E5BBE68010A6BE0B9073A4BB6FE6A0 /* Pods-GavinAudiorecorder_Example-frameworks.sh */,
+				2E94B7C748F45662E902814FA911638E /* Pods-GavinAudiorecorder_Example-Info.plist */,
+				F04AF36FE170F4C75353B3555C37AEBE /* Pods-GavinAudiorecorder_Example-umbrella.h */,
+				D3B3DFF1B052F09DF6F49424B508CA00 /* Pods-GavinAudiorecorder_Example.debug.xcconfig */,
+				61AE31D01EA468174FEAE2101CBCC408 /* Pods-GavinAudiorecorder_Example.release.xcconfig */,
+			);
+			name = "Pods-GavinAudiorecorder_Example";
+			path = "Target Support Files/Pods-GavinAudiorecorder_Example";
+			sourceTree = "<group>";
+		};
+		8783612E55397BF30EF9FEE2EF7834D3 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				9551FB5F1C30D2FE1329CA698A784DB1 /* GavinAudiorecorder.modulemap */,
+				826F9F7ECD761417D19A0637E1102E8F /* GavinAudiorecorder-dummy.m */,
+				E24C6D88ABF7AE301A43F04A7B0F22B2 /* GavinAudiorecorder-Info.plist */,
+				458C69640F217CA18AF407A4D46A4A09 /* GavinAudiorecorder-prefix.pch */,
+				22DAFE71AD4F2EEF7ED7CBEDEA5AB914 /* GavinAudiorecorder-umbrella.h */,
+				C90ADF50D6C749AFF3BE5031866F3A6E /* GavinAudiorecorder.debug.xcconfig */,
+				BED088B1286C4E43C4D6D2F2DDB981B1 /* GavinAudiorecorder.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/GavinAudiorecorder";
+			sourceTree = "<group>";
+		};
+		9D63C45FEE57BE801D32242373626D4B /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				7A578A37866B3A6FD2C7597E601E01A7 /* Pods-GavinAudiorecorder_Example */,
+				58F54268F1D6686ABCFA9CC70220BDFD /* Pods-GavinAudiorecorder_Tests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		A813E5206FEFA348F346437EBD4BF90D /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0225226F9B4604F9A7675D5CF302387A /* GavinAudiorecorder */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		B4FF77CB150B82238F0F042968E1718F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3D3A3E3CEF084EA6693A3F11E93DDFA1 /* GavinAudiorecorder */,
+				BEE6B8CD57BD58E7A0908E83B88869A0 /* Pods-GavinAudiorecorder_Example */,
+				0738C47008D5A3A4A875EA326388D499 /* Pods-GavinAudiorecorder_Tests */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CEEE32FE0B34C9062F003AC8ED4DFA6D /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				0DB3AACD004994A3BBD58AA8A9B545C7 /* GavinAudiorecorder.podspec */,
+				64B67E0858BBA4F17032DE707050BF28 /* LICENSE */,
+				9E6A464A66D6D661E89AB857DAD98CBB /* README.md */,
+			);
+			name = Pod;
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				A813E5206FEFA348F346437EBD4BF90D /* Development Pods */,
+				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
+				B4FF77CB150B82238F0F042968E1718F /* Products */,
+				9D63C45FEE57BE801D32242373626D4B /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				578452D2E740E91742655AC8F1636D1F /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		002A403FA9447C5656D7F1EF54767BDC /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				94B769CC7DCA9A20850E2ED72CFCAAAA /* Pods-GavinAudiorecorder_Example-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		27E32638BFE70CE7C45E0DED22423B0A /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D6416F8C66BCFA4965606572E9EBD207 /* Pods-GavinAudiorecorder_Tests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B47E640D83C353D6FC1994BD0D8FB72F /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FD7EBFC16875A816C70495EA30BE7CA8 /* GavinAudiorecorder-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		5FD9B973A0DD5940F748D3B687629BAF /* GavinAudiorecorder */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7BD0753BA9D18043D1C5DDE8530D17E8 /* Build configuration list for PBXNativeTarget "GavinAudiorecorder" */;
+			buildPhases = (
+				B47E640D83C353D6FC1994BD0D8FB72F /* Headers */,
+				7922ACB895D08029A32F5EF38E739F3A /* Sources */,
+				CF85C5EA2F4549B31BDB24B0ED9ADDDA /* Frameworks */,
+				0533440A9C6469AF4D2E3FFA96570493 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GavinAudiorecorder;
+			productName = GavinAudiorecorder;
+			productReference = 3D3A3E3CEF084EA6693A3F11E93DDFA1 /* GavinAudiorecorder */;
+			productType = "com.apple.product-type.framework";
+		};
+		83237CA51E7AC76281778464217D46CC /* Pods-GavinAudiorecorder_Example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FE9CCC3E96390F686FB2BB54A02DD12F /* Build configuration list for PBXNativeTarget "Pods-GavinAudiorecorder_Example" */;
+			buildPhases = (
+				002A403FA9447C5656D7F1EF54767BDC /* Headers */,
+				3BD4374FA36E1DA80EBE2F009989E204 /* Sources */,
+				88FCC3CFFBD0D8C6D70FD0D91D320263 /* Frameworks */,
+				A295C556851678A34AE9DA81ED19DC7F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C84C3353572655BDBA2C0156F6861E18 /* PBXTargetDependency */,
+			);
+			name = "Pods-GavinAudiorecorder_Example";
+			productName = Pods_GavinAudiorecorder_Example;
+			productReference = BEE6B8CD57BD58E7A0908E83B88869A0 /* Pods-GavinAudiorecorder_Example */;
+			productType = "com.apple.product-type.framework";
+		};
+		CA050884C7B218F932BF6334D4CFAB7F /* Pods-GavinAudiorecorder_Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EA1292D9A865BE4A997DFEE185C045E3 /* Build configuration list for PBXNativeTarget "Pods-GavinAudiorecorder_Tests" */;
+			buildPhases = (
+				27E32638BFE70CE7C45E0DED22423B0A /* Headers */,
+				1E7DFFAE38A33B53C2789D703D19503F /* Sources */,
+				9AF516F2F9B93AA458465DD274F716C7 /* Frameworks */,
+				C2F6E65A0BB1A76347C1B23EFFA749EE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5DFD7EF932BE611576EF834EB88AC131 /* PBXTargetDependency */,
+			);
+			name = "Pods-GavinAudiorecorder_Tests";
+			productName = Pods_GavinAudiorecorder_Tests;
+			productReference = 0738C47008D5A3A4A875EA326388D499 /* Pods-GavinAudiorecorder_Tests */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1240;
+				LastUpgradeCheck = 1240;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = B4FF77CB150B82238F0F042968E1718F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5FD9B973A0DD5940F748D3B687629BAF /* GavinAudiorecorder */,
+				83237CA51E7AC76281778464217D46CC /* Pods-GavinAudiorecorder_Example */,
+				CA050884C7B218F932BF6334D4CFAB7F /* Pods-GavinAudiorecorder_Tests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0533440A9C6469AF4D2E3FFA96570493 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A295C556851678A34AE9DA81ED19DC7F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C2F6E65A0BB1A76347C1B23EFFA749EE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1E7DFFAE38A33B53C2789D703D19503F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B2645A425F7831BC8B65A16B6C72C58C /* Pods-GavinAudiorecorder_Tests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3BD4374FA36E1DA80EBE2F009989E204 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A2BBD322C2EC30808B420F36CB315EE7 /* Pods-GavinAudiorecorder_Example-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7922ACB895D08029A32F5EF38E739F3A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				179F78C99F3949D51A95DE58761F23D7 /* GavinAudiorecorder-dummy.m in Sources */,
+				83653716E6EF55C0EFB9E8AC0D93F5AD /* HsAudioPlayer.swift in Sources */,
+				A3934BBE1C7B5DC405297F58EAB02229 /* HsAudioRecorder.swift in Sources */,
+				CA0AD8339F2AE552279E1E7257E0C54A /* HsAudioRecordHud.swift in Sources */,
+				0B757165F06AE7A00C22F993974E7DAC /* HsSonicWavesView.swift in Sources */,
+				F964E5F870CDBBA55BDF19E7719A9069 /* HsWavesView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		5DFD7EF932BE611576EF834EB88AC131 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-GavinAudiorecorder_Example";
+			target = 83237CA51E7AC76281778464217D46CC /* Pods-GavinAudiorecorder_Example */;
+			targetProxy = E864698486266D7AC326F1BBF491F878 /* PBXContainerItemProxy */;
+		};
+		C84C3353572655BDBA2C0156F6861E18 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = GavinAudiorecorder;
+			target = 5FD9B973A0DD5940F748D3B687629BAF /* GavinAudiorecorder */;
+			targetProxy = EF209C4ACA5CAC424C460B72360E39D0 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		30DD79510200D7B46229B531FB0C2DBF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C90ADF50D6C749AFF3BE5031866F3A6E /* GavinAudiorecorder.debug.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/GavinAudiorecorder/GavinAudiorecorder-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/GavinAudiorecorder/GavinAudiorecorder-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/GavinAudiorecorder/GavinAudiorecorder.modulemap";
+				PRODUCT_MODULE_NAME = GavinAudiorecorder;
+				PRODUCT_NAME = GavinAudiorecorder;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		7EE7A78859F657F6BEFC651185B43192 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		CC6DF4A5CEAD297CB5B991012BB53CEE /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 61AE31D01EA468174FEAE2101CBCC408 /* Pods-GavinAudiorecorder_Example.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-GavinAudiorecorder_Example/Pods-GavinAudiorecorder_Example-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-GavinAudiorecorder_Example/Pods-GavinAudiorecorder_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		D299434AB35E7FD6F7921C8EF24742FF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		D85310FD6EBC2F1196F7C99A75C04ADD /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BED088B1286C4E43C4D6D2F2DDB981B1 /* GavinAudiorecorder.release.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/GavinAudiorecorder/GavinAudiorecorder-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/GavinAudiorecorder/GavinAudiorecorder-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/GavinAudiorecorder/GavinAudiorecorder.modulemap";
+				PRODUCT_MODULE_NAME = GavinAudiorecorder;
+				PRODUCT_NAME = GavinAudiorecorder;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		DEA8FD3DD5835E9196E7B59E849E2516 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D3B3DFF1B052F09DF6F49424B508CA00 /* Pods-GavinAudiorecorder_Example.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-GavinAudiorecorder_Example/Pods-GavinAudiorecorder_Example-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-GavinAudiorecorder_Example/Pods-GavinAudiorecorder_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		F8E030E913F87E33DFCEE11508729EBB /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A0A9D47853BA042A1F3DE6D0B3CBBBEB /* Pods-GavinAudiorecorder_Tests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-GavinAudiorecorder_Tests/Pods-GavinAudiorecorder_Tests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-GavinAudiorecorder_Tests/Pods-GavinAudiorecorder_Tests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		FFDF77549DD50602B200D60BF1BF3E89 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 36BC3307CF56AC6CD5561FD9153B42A5 /* Pods-GavinAudiorecorder_Tests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-GavinAudiorecorder_Tests/Pods-GavinAudiorecorder_Tests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-GavinAudiorecorder_Tests/Pods-GavinAudiorecorder_Tests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D299434AB35E7FD6F7921C8EF24742FF /* Debug */,
+				7EE7A78859F657F6BEFC651185B43192 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7BD0753BA9D18043D1C5DDE8530D17E8 /* Build configuration list for PBXNativeTarget "GavinAudiorecorder" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				30DD79510200D7B46229B531FB0C2DBF /* Debug */,
+				D85310FD6EBC2F1196F7C99A75C04ADD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EA1292D9A865BE4A997DFEE185C045E3 /* Build configuration list for PBXNativeTarget "Pods-GavinAudiorecorder_Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FFDF77549DD50602B200D60BF1BF3E89 /* Debug */,
+				F8E030E913F87E33DFCEE11508729EBB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FE9CCC3E96390F686FB2BB54A02DD12F /* Build configuration list for PBXNativeTarget "Pods-GavinAudiorecorder_Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DEA8FD3DD5835E9196E7B59E849E2516 /* Debug */,
+				CC6DF4A5CEAD297CB5B991012BB53CEE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}

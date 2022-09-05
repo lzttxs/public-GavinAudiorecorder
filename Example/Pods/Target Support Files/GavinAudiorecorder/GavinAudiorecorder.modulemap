@@ -1,0 +1,6 @@
+framework module GavinAudiorecorder {
+  umbrella header "GavinAudiorecorder-umbrella.h"
+
+  export *
+  module * { export * }
+}

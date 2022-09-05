@@ -1,0 +1,16 @@
+PODS:
+  - GavinAudiorecorder (0.1.0)
+
+DEPENDENCIES:
+  - GavinAudiorecorder (from `../`)
+
+EXTERNAL SOURCES:
+  GavinAudiorecorder:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  GavinAudiorecorder: 9604205264cfe3813300fd7029054c72536956a5
+
+PODFILE CHECKSUM: 693c6dd00f91996acc749f7ec6b41cfc092e01d1
+
+COCOAPODS: 1.11.3

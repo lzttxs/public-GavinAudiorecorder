@@ -1,0 +1,22 @@
+{
+  "name": "GavinAudiorecorder",
+  "version": "0.1.0",
+  "summary": "A short description of GavinAudiorecorder.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/lizhi/GavinAudiorecorder",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "lizhi": "lizhi@hongsong.club"
+  },
+  "source": {
+    "git": "https://github.com/lizhi/GavinAudiorecorder.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "10.0"
+  },
+  "source_files": "GavinAudiorecorder/Classes/**/*"
+}
