@@ -16,12 +16,12 @@ class HsAudioRecordHUD: UIViewController {
                 self.desLabel.text = "松开取消"
                 self.cancelIcon.isHidden = false
                 self.waves.isHidden = true
-                self.bgView.backgroundColor = UIColor(hex: 0xFB3636)
+                self.bgView.backgroundColor = .red
             } else {
                 self.cancelIcon.isHidden = true
                 self.waves.isHidden = false
                 self.desLabel.text = "上滑取消"
-                self.bgView.backgroundColor = UIColor(hex: 0x373636)
+                self.bgView.backgroundColor = .lightGray
                 self.bgView.backgroundColor = .black
             }
         }
@@ -46,7 +46,7 @@ class HsAudioRecordHUD: UIViewController {
     }()
     
     lazy var desLabel: UILabel = {
-        let label = UILabel(frame: CGRect(x: 0, y: 0, width: kScreenW, height: 15))
+        let label = UILabel(frame: CGRect(x: 0, y: 0, width: UIScreen.main.bounds.width, height: 15))
         label.textColor = .white
         label.font = UIFont.systemFont(ofSize: 16, weight: .semibold)
         label.textAlignment = .center
@@ -55,7 +55,7 @@ class HsAudioRecordHUD: UIViewController {
     }()
     
     lazy var countDownLabel: UILabel = {
-        let label = UILabel(frame: CGRect(x: 0, y: 0, width: kScreenW, height: 15))
+        let label = UILabel(frame: CGRect(x: 0, y: 0, width: UIScreen.main.bounds.width, height: 15))
         label.textColor = .white
         label.font = UIFont.systemFont(ofSize: 12, weight: .semibold)
         label.textAlignment = .center
@@ -64,9 +64,9 @@ class HsAudioRecordHUD: UIViewController {
     
     lazy var bgView: UIView = {
         let temp = UIView(frame: .zero)
-        temp.backgroundColor = UIColor(hex: 0x373636)
+        temp.backgroundColor = .lightGray
         temp.backgroundColor = .black
-        temp.cornerRadius = 10
+        temp.layer.cornerRadius = 10
         temp.clipsToBounds = true
         temp.alpha = 0.75
         return temp
@@ -78,68 +78,30 @@ class HsAudioRecordHUD: UIViewController {
     
     override func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()
-        bgView.snp.remakeConstraints { make in
-            make.left.right.top.bottom.equalTo(0)
-        }
-        
-        waves.snp.remakeConstraints { make in
-            make.left.equalTo(30)
-            make.right.equalTo(-30)
-            make.top.equalTo(15)
-            make.height.equalTo(30)
-        }
-        
-        desLabel.snp.remakeConstraints { make in
-            make.bottom.equalTo(-25)
-            make.left.right.equalTo(0)
-        }
-        
-        countDownLabel.snp.remakeConstraints { make in
-            make.bottom.equalTo(-8)
-            make.left.right.equalTo(0)
-        }
-        
-        cancelIcon.snp.remakeConstraints { make in
-            make.centerX.equalTo(self.view.snp.centerX)
-            make.top.equalTo(20)
-            make.width.height.equalTo(20)
-        }
+       
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
         self.view.backgroundColor = .clear
         self.view.addSubview(bgView)
-        bgView.snp.makeConstraints { make in
-            make.left.right.top.bottom.equalTo(0)
-        }
+        
+        
         
         self.view.addSubview(waves)
-        waves.snp.makeConstraints { make in
-            make.left.equalTo(30)
-            make.right.equalTo(-30)
-            make.top.equalTo(15)
-            make.height.equalTo(30)
-        }
+       
         
         self.view.addSubview(desLabel)
-        desLabel.snp.makeConstraints { make in
-            make.bottom.equalTo(-25)
-            make.left.right.equalTo(0)
-        }
+        
+        
         
         self.view.addSubview(countDownLabel)
-        countDownLabel.snp.makeConstraints { make in
-            make.bottom.equalTo(-8)
-            make.left.right.equalTo(0)
-        }
+        
+        
         
         self.view.addSubview(cancelIcon)
-        cancelIcon.snp.makeConstraints { make in
-            make.centerX.equalTo(self.view.snp.centerX)
-            make.top.equalTo(20)
-            make.width.height.equalTo(20)
-        }
+       
+        
     }
     
     static func changeState(isCancel: Bool) {
@@ -157,10 +119,10 @@ class HsAudioRecordHUD: UIViewController {
     fileprivate func show() {
         guard let keyWindow = UIApplication.shared.keyWindow, let rootVC = keyWindow.rootViewController else { return }
         
-        rootVC.addChild(self)
+        rootVC.addChildViewController(self)
         rootVC.view.addSubview(self.view)
-        self.didMove(toParent: rootVC)
-        self.view.frame = CGRect(x: (kScreenW - 161)/2, y: (kScreenH - kNavigaH - 91)/2, width: 161, height: 91)
+        self.didMove(toParentViewController: rootVC)
+        self.view.frame = CGRect(x: (UIScreen.main.bounds.width - 161)/2, y: (UIScreen.main.bounds.height - 44 - 91)/2, width: 161, height: 91)
         self.view.alpha = 0
         UIView.animate(withDuration: 0.2, delay: 0, options: .allowAnimatedContent) { [weak self] in
             self?.view.alpha = 1
@@ -173,7 +135,7 @@ class HsAudioRecordHUD: UIViewController {
         waves.stopRecord()
         self.desLabel.text = "上滑取消"
         self.countDownLabel.text = ""
-        self.bgView.backgroundColor = UIColor(hex: 0x373636)
+        self.bgView.backgroundColor = .lightGray
         bgView.backgroundColor = .black
     }
     
@@ -188,8 +150,8 @@ class HsAudioRecordHUD: UIViewController {
         } completion: { [weak self] result in
             self?.resetConfig()
             let rootVC = UIApplication.shared.keyWindow?.rootViewController
-            self?.willMove(toParent: rootVC)
-            self?.removeFromParent()
+            self?.willMove(toParentViewController: rootVC)
+            self?.removeFromParentViewController()
             self?.view.removeFromSuperview()
         }
     }

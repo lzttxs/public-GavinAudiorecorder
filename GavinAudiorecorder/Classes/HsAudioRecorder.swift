@@ -13,6 +13,7 @@ enum Directories {
 }
 
 
+@available(iOS 11.0, *)
 class HsAudioRecorder: NSObject {
     
     private var recordFilePath = Directories.documentsDirectory.appendingPathComponent("voice.caf")
@@ -38,8 +39,8 @@ class HsAudioRecorder: NSObject {
     
     func startRecording(with completion: @escaping (Result) -> Void, recordDurationProgress: @escaping (TimeInterval, TimeInterval, Float) -> Void) -> Bool {
         let permission = AVAudioSession.sharedInstance().recordPermission
-        guard permission == .granted else {
-            if permission == .undetermined {
+        guard permission() == .granted else {
+            if permission() == .undetermined {
                 AVAudioSession.sharedInstance().requestRecordPermission { granted in
                 }
             } else {
@@ -47,7 +48,7 @@ class HsAudioRecorder: NSObject {
                 let alert = UIAlertController(title: "无法访问麦克风", message: "开启麦克风权限才能发送语音消息", preferredStyle: .alert)
                 alert.addAction(UIAlertAction(title: "以后再说", style: .cancel, handler: nil))
                 alert.addAction(UIAlertAction(title: "去开启", style: .default, handler: { action in
-                    guard let url = URL(string: UIApplication.openSettingsURLString) else {
+                    guard let url = URL(string: UIApplicationOpenSettingsURLString) else {
                         return
                     }
                     
@@ -71,8 +72,8 @@ class HsAudioRecorder: NSObject {
 
 //        DispatchQueue.global(qos: .userInitiated).async {
             do {
-                try AVAudioSession.sharedInstance().setCategory(.playAndRecord)
-                try AVAudioSession.sharedInstance().setActive(true, options: .notifyOthersOnDeactivation)
+                try AVAudioSession.sharedInstance().setCategory("")
+                try AVAudioSession.sharedInstance().setActive(true, with: .notifyOthersOnDeactivation)
                 self.audioRecorder = try AVAudioRecorder(url: self.recordFilePath, settings: self.settings)
                 self.audioRecorder?.isMeteringEnabled = true
                 self.audioRecorder?.prepareToRecord()
@@ -88,7 +89,7 @@ class HsAudioRecorder: NSObject {
                     self.audioRecorder?.record(forDuration: self.maxDuration)
                     self.displayLink = CADisplayLink(target: self, selector: #selector(self.udateDuration))
                     self.displayLink?.preferredFramesPerSecond = 5;
-                    self.displayLink?.add(to: .main, forMode: .common)
+                    self.displayLink?.add(to: .main, forMode: .commonModes)
                 } else {
                     self.completion?(.failure(Error.permissionDenied))
                 }
@@ -147,6 +148,7 @@ class HsAudioRecorder: NSObject {
     
 }
 
+@available(iOS 11.0, *)
 extension HsAudioRecorder: AVAudioRecorderDelegate {
     
     func audioRecorderDidFinishRecording(_ recorder: AVAudioRecorder, successfully flag: Bool) {
@@ -185,13 +187,14 @@ extension HsAudioRecorder: AVAudioRecorderDelegate {
     }
 
     private func handleFinish() {
-        try? AVAudioSession.sharedInstance().setActive(false, options: .notifyOthersOnDeactivation)
+        try? AVAudioSession.sharedInstance().setActive(false, with: .notifyOthersOnDeactivation)
         displayLink?.invalidate()
         displayLink = nil
         audioRecorder = nil
     }
 }
 
+@available(iOS 11.0, *)
 extension HsAudioRecorder {
     enum Result {
         case success(URL)

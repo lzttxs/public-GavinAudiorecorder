@@ -36,9 +36,9 @@ class HsAudioPlayer: NSObject {
         //异常中断通知
         NotificationCenter.default.addObserver(self, selector: #selector(playToStalled), name: .AVPlayerItemPlaybackStalled, object: nil)
         //音频中断通知
-        NotificationCenter.default.addObserver(self, selector: #selector(playToStalled), name: AVAudioSession.interruptionNotification, object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(playToStalled), name: NSNotification.Name.AVAudioSessionInterruption, object: nil)
         //音频线路改变（耳机插入、拔出）
-        NotificationCenter.default.addObserver(self, selector: #selector(playToPause), name: AVAudioSession.silenceSecondaryAudioHintNotification, object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(playToPause), name: NSNotification.Name.AVAudioSessionSilenceSecondaryAudioHint, object: nil)
     }
     
     func play(url: URL, callback:@escaping HsAudioPlayerCallback) {

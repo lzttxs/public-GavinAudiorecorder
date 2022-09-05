@@ -45,7 +45,7 @@ class HsWavesView: UIView {
         if progress > 0.8 {
             progress = 0
         } else {
-            progress = (progress + 0.01).rounded(numberOfDecimalPlaces: 2, rule: .awayFromZero)
+//            progress = progress.rounded(numberOfDecimalPlaces: 2, rule: .awayFromZero)
         }
     }
     
